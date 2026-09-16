@@ -2,11 +2,11 @@
 
 This is a rebuild of the firmware for my B.Eng final-year project at Afe Babalola University (2024), "Development of a Smart HVAC System". The original code was lost, so I am rewriting it from the design in my project report.
 
-# What the project does
+## What the project does
 
 The prototype is a model office split into four zones, each with its own fan. An ESP32-CAM above the model runs a machine learning model (trained in Edge Impulse) that counts the people in each zone. It sends the counts to an Arduino Nano, which sets each fan's speed based on how many people are in that zone. Empty zones get no airflow, which saves energy.
 
-# Fan speed logic
+## Fan speed logic
 
 Each zone's fan speed depends on how many people are in that zone. More people produce more heat, so the fan runs faster.
 
